@@ -24,7 +24,7 @@ function App() {
             Github{" "}
           </a>
           and hosted on
-          <a target="_blank" href="#">
+          <a target="_blank" href=",">
             {" "}
             Netlify
           </a>{" "}
