@@ -1,0 +1,41 @@
+.Weather {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 60px;
+  color: rgb(49, 49, 49);
+  padding: 0;
+}
+.Weather .Search-form button {
+  background: rgb(42, 133, 236);
+  border: rgb(12, 141, 247);
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 2px;
+  margin-left: 5px;
+}
+.Search-form input {
+  background: rgb(151, 209, 234);
+  border: rgb(12, 141, 247);
+  border-radius: 6px;
+  font-size: 18px;
+  width: 200px;
+  height: 30px;
+  visibility: visible;
+  border-radius: 10px;
+  border-width: 0.1px;
+}
+.Weather a {
+  text-decoration: none;
+  color: #337ca0;
+}
+.Weather a:hover {
+  text-decoration: underline;
+}
+.Weather .Wrapper {
+  width: 800px;
+  height: 550px;
+  margin: auto;
+  padding: 30px 30px 0px 30px;
+  border: solid 1px rgb(185, 185, 185);
+  background: #fff;
+  border-radius: 10px;
+}

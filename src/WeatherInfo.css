@@ -1,0 +1,36 @@
+.WeatherInfo h1 {
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.WeatherInfo h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.WeatherInfo p {
+  margin-bottom: 0;
+  opacity: 0.7;
+  line-height: 19px;
+}
+.WeatherInfo .WeatherDescription {
+  margin-top: 45px;
+}
+.WeatherInfo .WeatherData {
+  color: #1a8de0;
+  font-weight: 700;
+}
+
+.WeatherInfo .UnitLink {
+  position: relative;
+  top: 18px;
+  margin-left: 5px;
+  font-size: 22px;
+  line-height: 1;
+}
+.WeatherTemperature {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}

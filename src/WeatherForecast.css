@@ -1,0 +1,12 @@
+.WeatherForecast {
+  text-align: center;
+}
+.WeatherForecast h3 {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.WeatherForecast p {
+  color: #0c032e;
+  font-size: 18px;
+}
