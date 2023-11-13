@@ -17,7 +17,10 @@ function App() {
             Elizabeth Torralbo
           </a>{" "}
           available on{" "}
-          <a target="_blank" href="#">
+          <a
+            target="_blank"
+            href="https://github.com/eliztorr/React-Weather-App"
+          >
             Github{" "}
           </a>
           and hosted on
