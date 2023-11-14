@@ -13,6 +13,7 @@ function App() {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/elizabethtorralbo/"
+            rel="noreferrer"
           >
             Elizabeth Torralbo
           </a>{" "}
@@ -20,6 +21,7 @@ function App() {
           <a
             target="_blank"
             href="https://github.com/eliztorr/React-Weather-App"
+            rel="noreferrer"
           >
             Github{" "}
           </a>
