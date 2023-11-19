@@ -26,7 +26,11 @@ function App() {
             Github{" "}
           </a>
           and hosted on
-          <a target="_blank" href=",">
+          <a
+            target="_blank"
+            href="https://vocal-elf-22c086.netlify.app/"
+            rel="noreferrer"
+          >
             {" "}
             Netlify
           </a>{" "}
