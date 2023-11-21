@@ -1,17 +1,19 @@
 import React from "react";
 import TimeandDate from "./TimeandDate";
-
 import "./WeatherInfo.css";
 import WeatherIcon from "./WeatherIcon";
-import WeatherTemperature from "./WeatherTemp";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
+  if (!props.data) {
+    return null; // or you can render a loading/error message
+  }
+
   return (
     <div className="WeatherInfo">
       <div className=" row mt-3">
         <div className="col-7">
           <h2 className="mb-2">{props.data.city}</h2>
-
           <p>
             <TimeandDate date={props.data.date} />
           </p>
@@ -19,23 +21,22 @@ export default function WeatherInfo(props) {
         </div>
         <div className="WeatherDescription col-5 ">
           <p>
-            Humidity: <span className="WeatherData">{props.data.humidity}</span>
-            %
+            Humidity:{" "}
+            <span className="WeatherData">{props.data.humidity} </span>%
           </p>
           <p>
             Pressure:{" "}
-            <span className="WeatherData"> {props.data.pressure}</span>
+            <span className="WeatherData"> {props.data.pressure} </span>
             hPa
           </p>
           <p>
             Wind:
-            <span className="WeatherData"> {props.data.wind}</span>km/h
+            <span className="WeatherData"> {props.data.wind} </span>km/h
           </p>
         </div>
       </div>
-      <WeatherIcon code={props.data.icon} size={52} />
-
-      <WeatherTemperature celsius={props.data.temperature} />
+      <WeatherIcon code={props.data.icon} size={72} />
+      <WeatherTemperature celsius={props.data.temperature} unit={props.unit} />
     </div>
   );
 }

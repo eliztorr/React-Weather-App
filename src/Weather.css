@@ -3,20 +3,22 @@
   margin-top: 60px;
   color: rgb(49, 49, 49);
   padding: 0;
+  font-size: 18px;
 }
 .Weather .Search-form button {
-  background: rgb(42, 133, 236);
-  border: rgb(12, 141, 247);
+  background: rgb(3, 59, 179);
+  border: rgb(17, 94, 156);
   border-radius: 6px;
-  font-size: 16px;
-  padding: 2px;
+  font-size: 15px;
+  padding: 1px;
   margin-left: 5px;
+  width: 150px;
 }
 .Search-form input {
   background: rgb(151, 209, 234);
   border: rgb(12, 141, 247);
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 14px;
   width: 200px;
   height: 30px;
   visibility: visible;

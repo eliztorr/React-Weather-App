@@ -1,12 +1,15 @@
-import { useState } from "react";
-import "./Weather.css";
-import axios from "axios";
+import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import TemperatureConverter from "./TemperatureConverter";
+
+import "./Weather.css";
+import axios from "axios";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [unit, setUnit] = useState("celsius");
 
   function handleResponse(response) {
     console.log(response);
@@ -23,19 +26,29 @@ export default function Weather(props) {
       city: response.data.name,
     });
   }
+
   function search() {
     const apiKey = "aa09763d916df0424c840d55bfc2d2c9";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleResponse).catch(handleError);
+  }
+
+  function handleError(error) {
+    console.error("Error fetching weather data:", error);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
     search();
   }
+
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function handleUnitChange(newUnit) {
+    setUnit(newUnit);
   }
 
   if (weatherData.ready) {
@@ -60,10 +73,22 @@ export default function Weather(props) {
                 >
                   Search
                 </button>
+                <button className="btn btn-secondary col-3" id="current-city">
+                  Current location
+                </button>
               </form>
             </div>
-            <WeatherInfo data={weatherData} />
-            <WeatherForecast coordinates={weatherData.coordinates} />
+            <div className="row ">
+              <WeatherInfo data={weatherData} unit={unit} />
+              <TemperatureConverter
+                unit={unit}
+                onUnitChange={handleUnitChange}
+              />
+            </div>
+            <WeatherForecast
+              coordinates={weatherData.coordinates}
+              unit={unit}
+            />
           </header>
         </div>
       </div>
