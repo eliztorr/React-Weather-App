@@ -1,11 +1,11 @@
 .WeatherInfo h1 {
-  font-size: 60px;
+  font-size: 70px;
   margin-bottom: 0;
   margin-left: 15px;
   margin-top: 10px;
 }
 .WeatherInfo h2 {
-  font-size: 62px;
+  font-size: 52px;
   font-weight: 600;
   margin-top: 20px;
 }
@@ -23,8 +23,9 @@
   font-size: 18px;
   line-height: 1.2;
 }
-.WeatherTemperature {
+.Temperature {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 30px;
+  color: blue;
 }

@@ -3,10 +3,11 @@ import TimeandDate from "./TimeandDate";
 import "./WeatherInfo.css";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   if (!props.data) {
-    return null; // or you can render a loading/error message
+    return null;
   }
 
   return (

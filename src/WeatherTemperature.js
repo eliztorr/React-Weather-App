@@ -1,6 +1,5 @@
 import React from "react";
 import "./WeatherInfo.css";
-import TemperatureConverter from "./TemperatureConverter";
 
 export default function WeatherTemperature({
   celsius,
@@ -31,7 +30,7 @@ export default function WeatherTemperature({
     let fahrenheit = Math.round((celsius * 9) / 5 + 32);
     return (
       <div className="WeatherTemperature d-inline-flex">
-        <h1>{fahrenheit}</h1>º
+        <h1>{fahrenheit}º</h1>
       </div>
     );
   }

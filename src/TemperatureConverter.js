@@ -1,7 +1,7 @@
 import React from "react";
 import "./TemperatureConverter.css";
 
-export default function TemperatureConverter({ unit, onUnitChange }) {
+const TemperatureConverter = ({ unit, onUnitChange }) => {
   const convertToFahrenheit = (event) => {
     event.preventDefault();
     onUnitChange("fahrenheit");
@@ -29,4 +29,6 @@ export default function TemperatureConverter({ unit, onUnitChange }) {
       </button>
     </div>
   );
-}
+};
+
+export default TemperatureConverter;

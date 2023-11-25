@@ -37,7 +37,11 @@ export default function WeatherForecast(props) {
         <div className="row">
           {filteredForecast.map((dailyForecast, index) => (
             <div className="col" key={index}>
-              <WeatherForecastDay data={dailyForecast} unit={props.unit} />
+              <WeatherForecastDay
+                data={dailyForecast}
+                unit={props.unit}
+                onUnitChange={props.onUnitChange}
+              />
             </div>
           ))}
         </div>

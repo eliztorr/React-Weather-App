@@ -1,0 +1,17 @@
+.Weather-icon-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Weather-icon-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  opacity: 0.7;
+  z-index: -1;
+}

@@ -1,13 +1,7 @@
 .WeatherForecast {
   text-align: center;
 }
-.WeatherForecast p {
-  color: #1c1b1d;
-  font-size: 2px;
-}
-.WeatherForecast-temp-max {
+.WeatherForecast h3 {
   color: black;
-}
-.WeatherForecast-temp-min {
-  color: grey;
+  font-size: 18px;
 }
