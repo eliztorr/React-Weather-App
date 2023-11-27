@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import TemperatureConverter from "./TemperatureConverter";
@@ -32,16 +32,18 @@ export default function Weather(props) {
     "50n": "FOG",
   };
 
-  const backgroundImageMapping = {
-    CLEAR_DAY: "clear-sky.jpg",
-    CLEAR_NIGHT: "clear-night.jpg",
-    PARTLY_CLOUDY_DAY: "partly-cloudy-day.jpg",
-    PARTLY_CLOUDY_NIGHT: "partly-cloudy-night.jpg",
-    CLOUDY: "cloudy.jpg",
-    RAIN: "rain-day.jpg",
-    SNOW: "snow-night.jpg",
-    FOG: "fog-day.jpg",
-  };
+  const backgroundImageMapping = useMemo(() => {
+    return {
+      CLEAR_DAY: "clear-sky.jpg",
+      CLEAR_NIGHT: "clear-night.jpg",
+      PARTLY_CLOUDY_DAY: "partly-cloudy-day.jpg",
+      PARTLY_CLOUDY_NIGHT: "partly-cloudy-night.jpg",
+      CLOUDY: "cloudy.jpg",
+      RAIN: "rain-day.jpg",
+      SNOW: "snow-night.jpg",
+      FOG: "fog-day.jpg",
+    };
+  }, []);
 
   const weatherCondition = weatherData.icon;
   console.log("Weather Condition:", weatherCondition);
