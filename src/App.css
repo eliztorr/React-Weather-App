@@ -3,13 +3,13 @@
 }
 
 footer {
-  color: #2d3a3d;
+  color: #7f9296;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 a {
   text-decoration: underline;
-  color: #2d3a3d;
+  color: #7f9296;
 }
 
 @media (max-width: 767px) {

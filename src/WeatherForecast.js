@@ -30,7 +30,7 @@ export default function WeatherForecast(props) {
   }
 
   if (loaded) {
-    const filteredForecast = forecast.slice(0, 5); // Keep only the first 5 items
+    const filteredForecast = forecast.slice(0, 5);
 
     return (
       <div className="WeatherForecast mt-3 mb-2">
