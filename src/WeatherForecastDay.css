@@ -3,5 +3,34 @@
 }
 .WeatherForecast h3 {
   color: black;
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.WeatherForecastTempMax h1 {
+  font-size: 28px;
+  color: black;
+  font-weight: 600;
+}
+.WeatherForecastTempMin h1 {
+  color: black;
+  font-size: 28px;
+}
+.WeatherForecast p {
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .WeatherForecast h3 {
+    font-size: 16px;
+  }
+  .WeatherForecastTempMax h1 {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+  .WeatherForecastTempMin h1 {
+    font-size: 16px;
+  }
+  .WeatherForecast p {
+    margin-top: 5px;
+  }
 }

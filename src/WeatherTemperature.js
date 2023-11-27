@@ -1,23 +1,7 @@
 import React from "react";
 import "./WeatherInfo.css";
 
-export default function WeatherTemperature({
-  celsius,
-  unit = "celsius",
-  onUnitChange,
-}) {
-  const convertToFahrenheit = (event) => {
-    event.preventDefault();
-    console.log("Converting to Fahrenheit");
-    onUnitChange("fahrenheit");
-  };
-
-  const convertToCelsius = (event) => {
-    event.preventDefault();
-    console.log("Converting to Celsius");
-    onUnitChange("celsius");
-  };
-
+export default function WeatherTemperature({ celsius, unit = "celsius" }) {
   console.log("Unit:", unit);
 
   if (unit === "celsius") {

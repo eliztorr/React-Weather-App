@@ -3,10 +3,15 @@
   margin-top: 60px;
   color: rgb(49, 49, 49);
   padding: 0;
-  font-size: 18px;
+}
+
+.Weather container {
+  min-height: 90em;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Weather .Search-form button {
-  background: rgb(3, 59, 179);
+  background: rgb(4, 89, 112);
   border: rgb(17, 94, 156);
   border-radius: 6px;
   font-size: 15px;
@@ -15,22 +20,15 @@
   width: 130px;
 }
 .Search-form input {
-  background: rgb(182, 220, 236);
+  background: rgb(219, 227, 231);
   border: rgb(12, 141, 247);
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
   width: 230px;
   height: 30px;
   visibility: visible;
   border-radius: 10px;
   border-width: 0.1px;
-}
-.Weather a {
-  text-decoration: none;
-  color: #337ca0;
-}
-.Weather a:hover {
-  text-decoration: underline;
 }
 .Weather .Wrapper {
   width: 700px;
@@ -39,5 +37,28 @@
   padding: 30px 30px 0px 30px;
   border: solid 1px rgb(185, 185, 185);
   background: #fff;
+  opacity: 0.8;
   border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .Weather .Wrapper {
+    width: 380px;
+    height: 470px;
+    padding: 0;
+  }
+  .Search-form input {
+    width: 140px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .Weather .Search-form button {
+    margin-bottom: 10px;
+    width: 110px;
+    font-size: 13px;
+  }
+  .Weather {
+    max-height: 70em;
+    background-repeat: no-repeat;
+  }
 }

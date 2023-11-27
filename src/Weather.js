@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import TemperatureConverter from "./TemperatureConverter";
-import WeatherIcon from "./WeatherIcon";
 
 import "./Weather.css";
 import axios from "axios";
@@ -62,7 +61,7 @@ export default function Weather(props) {
   };
 
   useEffect(() => {
-    // Set background dynamically when weatherData changes
+    // Set background when weatherData changes
     if (weatherData.icon) {
       const backgroundContainer = document.getElementById(
         "background-container"
@@ -87,12 +86,13 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       city: response.data.name,
+      country: response.data.sys.country,
     });
   }
 
   function search() {
     const apiKey = "aa09763d916df0424c840d55bfc2d2c9";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse).catch(handleError);
   }

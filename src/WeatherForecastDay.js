@@ -26,10 +26,10 @@ export default function WeatherForecastDay(props) {
       <h3 className="WeatherForecast-day">{day()}</h3>
       <WeatherIcon code={props.data.weather[0].icon} size={42} />
       <p>
-        <span className="WeatherForecast-temp-max fw-bold">
+        <span className="WeatherForecastTempMax">
           <WeatherTemperature celsius={maxTemperature()} unit={props.unit} />
         </span>{" "}
-        <span className="WeatherForecast-temp-min">
+        <span className="WeatherForecastTempMin">
           <WeatherTemperature celsius={minTemperature()} unit={props.unit} />
         </span>
       </p>

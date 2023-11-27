@@ -6,7 +6,6 @@
 .TemperatureConverter span {
   font-size: 30px;
 }
-
 .TemperatureButton {
   background: none;
   border: none;
@@ -20,4 +19,13 @@
 .TemperatureButton.active {
   font-weight: bold;
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  TemperatureConverter span {
+    font-size: 18px;
+  }
+  .TemperatureButton {
+    font-size: 20px;
+  }
 }
