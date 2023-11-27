@@ -71,7 +71,7 @@ export default function Weather(props) {
           backgroundImageMapping[weatherData.icon];
       }
     }
-  }, [weatherData]);
+  }, [weatherData, backgroundImageMapping]);
 
   function handleResponse(response) {
     console.log(response);
