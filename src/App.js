@@ -7,10 +7,6 @@ import "./App.css";
 export default function App() {
   const [unit, setUnit] = useState("celsius");
 
-  const handleUnitChange = () => {
-    setUnit((prevUnit) => (prevUnit === "celsius" ? "fahrenheit" : "celsius"));
-  };
-
   return (
     <div className="App">
       <div className="container p-0">
