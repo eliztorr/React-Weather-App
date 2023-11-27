@@ -34,7 +34,7 @@ export default function App() {
         and hosted on{" "}
         <a
           target="_blank"
-          href="https://vocal-elf-22c086.netlify.app/"
+          href="https://gorgeous-squirrel-0be046.netlify.app/"
           rel="noreferrer"
         >
           Netlify
