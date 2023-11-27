@@ -6,9 +6,9 @@
 }
 
 .Weather container {
-  min-height: 90em;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 89vh;
 }
 .Weather .Search-form button {
   background: rgb(4, 89, 112);
