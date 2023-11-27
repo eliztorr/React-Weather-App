@@ -5,7 +5,7 @@ import WeatherForecast from "./WeatherForecast";
 import "./App.css";
 
 export default function App() {
-  const [unit, setUnit] = useState("celsius");
+  const [unit] = useState("celsius");
 
   return (
     <div className="App">
